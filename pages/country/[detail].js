@@ -52,21 +52,21 @@ const myData = ({data}) =>{
   return (
     <div>
     <div id="first">
-      <div id = "second" class="child">
+      <div id = "second" className="child">
         <h1 id="name">{data[0].name.common} </h1>
         <img src={data[0].flags.png} id="image"></img>
       </div>
-      <div id = "third" class="child">
-        <div id="native" class="fo">NativeName:{red}</div>
-        <div id="capital" class="fo"> Capital:{data[0].capital}</div>
-        <div id="popu" class="fo">Population:{data[0].population}</div>
-        <div id="Region" class="fo">Region:{data[0].region}</div>
-        <div id ="Sub" class="fo">Sub-Region:{data[0].subregion} </div>
-        <div id="Area" class="fo">Area:{data[0].area} </div>
-        <div id="Country" class="fo">Country-Code:</div>
-        <div id="lang" class="fo">Languages:{lane}</div>
-        <div id="curr" class="fo">Currency:{next} </div>
-        <div id="time" class="fo">TimeZones:{data[0].timezones}</div>
+      <div id = "third" className="child">
+        <div id="native" className="fo">NativeName:{red}</div>
+        <div id="capital" className="fo"> Capital:{data[0].capital}</div>
+        <div id="popu" className="fo">Population:{data[0].population}</div>
+        <div id="Region" className="fo">Region:{data[0].region}</div>
+        <div id ="Sub" className="fo">Sub-Region:{data[0].subregion} </div>
+        <div id="Area" className="fo">Area:{data[0].area} </div>
+        <div id="Country" className="fo">Country-Code:</div>
+        <div id="lang" className="fo">Languages:{lane}</div>
+        <div id="curr" className="fo">Currency:{next} </div>
+        <div id="time" className="fo">TimeZones:{data[0].timezones}</div>
       </div>
       
       
