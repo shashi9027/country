@@ -30,11 +30,16 @@ export const getStaticProps = async (context) =>
   
 }
 const myData = ({data}) =>{
-  let re="NULL",red="NULL";
+  let re="NULL",red="NULL", lan="NULL", lane="NULL";
+  if(data[0].name.nativeName){
   re = Object.values(data[0].name.nativeName)[0];
   red = Object.values(re)[0];
-  var lan = Object.values(data[0].languages)[0];
-  var lane = Object.values(lan);
+  }
+  if(data[0].languages)
+  {
+   lan = Object.values(data[0].languages)[0];
+   lane = Object.values(lan);
+  }
   let neighbour =null;
   if(data[0].borders)
   {
