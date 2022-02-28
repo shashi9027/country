@@ -35,13 +35,13 @@ const myData = ({data}) =>{
   red = Object.values(re)[0];
   var lan = Object.values(data[0].languages)[0];
   var lane = Object.values(lan);
-  let neighbour;
+  let neighbour =null;
   if(data[0].borders)
   {
    neighbour  = data[0].borders.map((necon)=>{
     return ("https://countryflagsapi.com/png/"+necon);
   })}
-  console.log(neighbour);
+  
   
   
   let next = "NULL";
@@ -75,7 +75,9 @@ const myData = ({data}) =>{
     <div className="neighbour">
       <div className="hene">Neighbour Countries</div>
            <div className="hened">
-           {neighbour.map((value, index)=>( <div  className="neimg" key={index} >
+             
+           { 
+           neighbour?.map((value, index)=>( <div  className="neimg" key={index} >
                <img src={value} object-fit='fill' width='100%' height='100%' />
           
             </div>))}
