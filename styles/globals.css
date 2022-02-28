@@ -1,4 +1,4 @@
- * {
+* {
 
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ form.example input[type=text] {
   font-size: 17px;
   border: 1px solid grey;
   float: left;
-  width: 23%;
+  width: 27%;
   background: #f1f1f1;
   border-right:none;
   margin-left:500px;
@@ -39,7 +39,7 @@ form.example::after {
   display: table;
 }
 #mySearch {
-  width: 40%;
+  width: 42%;
   font-size: 18px;
   padding: 11px;
   border: 1px solid #ddd;
@@ -51,24 +51,21 @@ form.example::after {
 
 
 .box{
-  border: 1px solid;
-  width: 28%;
+  border: 1px solid ;
+  width: 32% !important;
   font-size: 18px;
   
   border: 1px solid #ddd;
   margin-top: 1%;
   height:130px;
   margin-left: 500px;
-  display:flex;
-  
-  
-  
-  
+  display: flex;
+
 }
  
 .sec{
   border: 1px solid;
-  width: 38%;
+  width: 38% !important;
   font-size: 18px;
   
   border: 1px solid #ddd;
@@ -76,7 +73,7 @@ form.example::after {
   margin-top: 1.5%;
   margin-left:1.5%;
   height:110px;
-  display:inline;
+  
 }
 .imag{
   object-fit: fill;
@@ -85,18 +82,10 @@ form.example::after {
 }
 .thir{
   
- 
-  
-  
-  flex-grow: 1;
+  flex-grow: .6;
   height:130px;
-   
   
-  
-  
-  
-  display:inline;
-  
+
   
 }
 #head{
@@ -105,49 +94,54 @@ form.example::after {
   padding: 11px;
   
   
-  margin-left:500px;
+  margin-left:490px;
 }
 .cn{
   font-size: 15px;
+
   padding-left: 10px;
 }
 .cne{
-  font-size:15px;
+  font-size:13px;
+  margin-top: -2px;
   padding-left: 10px;
 }
 .cned{
-  font-size: 10px;
+  font-size: 13px;
+  margin-top:4px;
   padding-left:10px;
 }
 
 .six{
-  display:flex;
-
+  display: flex;
+  margin-top: 10px;
+  
 }
 
 .four{
-  border: 1px solid blueviolet;
+  border: 2px solid blue;
   width:40%;
   height:30px;
   margin-left: 10px;
-  display:inline;
+  display:flex;
   text-align: center;
 
 }
 .five{
-  border: 1px solid blueviolet;
+  border: 2px solid blue;
   width:40%;
   height:30px;
   margin-left: 15px;
-  display:inline;
+  display:flex;
   text-align:center;
 }
 
 .sh{
   font-size:15px;
-  padding-left:10px;
-  text-align: center;
-  color:blueviolet;
+  padding-left:15px;
+  padding-top: 5px;
+  
+  color:blue;
   padding-bottom: 20px;
   position: relative;
   text-decoration: none;
@@ -157,9 +151,10 @@ form.example::after {
 }
 .dd{
   font-size:15px;
-  padding-left:10px;
+  padding-left:25px;
+  padding-top: 5px;
   text-align: center;
-  color:blueviolet;
+  color:blue;
   padding-bottom:20px ;
   position:relative;
   text-decoration:none;
@@ -167,7 +162,7 @@ form.example::after {
 #first{
   width:80%;
   
-  margin:1rem;
+  margin:3rem;
   display:flex;
 
 }
@@ -178,12 +173,13 @@ form.example::after {
   margin-top:20px;
   
   
+  
 }
 #third{
   
   
-  margin-left: -8%;
-  margin-top:30px;
+  margin-left:5px;
+  margin-top:65px;
   
 }
 .class{
@@ -194,6 +190,7 @@ form.example::after {
 }
 #image{
   margin-top: 10Px;
+  height:60%;
 }
 #name{
   
@@ -201,6 +198,35 @@ form.example::after {
 }
 .fo{
   font-size:15px;
+  padding-top: 10px;
+}
+.neighbour{
+  margin-left: 3rem;
+  font-size: 20px;
+  border:1px solid rgb(110, 107, 107);
+  width:50%;
+  font-weight: bold;
+  height:100%;
+  
+}
+.hene{
+  padding-left: 20px;
+}
+.hened{
+  margin-top:40px;
+  
+  
+  width:99%;
+  display:flex;
+  flex-wrap: wrap;
+  
+
+}
+.neimg{
+  height:110px;
+  width:30%;
+  margin-left:20px;
+  margin-top:10px;
 }
 @media only screen and (max-width:1285px)
 {

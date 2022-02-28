@@ -2,13 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { useState , React } from 'react';
+
 export const getStaticProps = async () =>{
   const res = await fetch("https://restcountries.com/v3.1/all");
-  const data = await res.json();
+  const values = await res.json();
   
   return{
     props:{
-      data,}
+      values,}
   };
 };
 
@@ -63,61 +65,109 @@ function dateTime(timezone){
   return(str)
 }
 
+  
 
-export default function Home(props) {
-  const data = props.data;
-  var date
+  
+
+  
+      
+  
+  
+  
+    
+    
+   
+
+
+
+
+export default function Home({values}) {
+  
+ 
+  const [data, setvalue] = useState(values);
+  const [tk, tki] = useState('');
+  const find = async(Event) =>{
+    Event.preventDefault();
+    
+    console.log(tk);
+    const apid = await fetch("https://restcountries.com/v3.1/name/"+tk);
+    let apide = await apid.json();
+    console.log(apide);
+    setvalue(apide);
+  }
+
+  
+ 
+  
+  
+    
+  
+  
+     
+  
+  
+      
+  
+  
+    
+    
+      
+ 
+  
   return (
-    <div>
+    <div className="borderbox">
       <Head>
         <title>countryinfo</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
       
       <h1 id="head">Countries</h1>
-      <form className="example" >
-      <input type="text" placeholder="Search.." name="search" id="myInput" />
-      <button  type="button" onClick="myfunction()"><i className="fa fa-search"></i></button>
+      <form  className="example" >
+      <input   type="text" placeholder="Search countries" name="search" value ={tk}id="myInput" onChange={e => tki(e.target.value)} />
+      <button  type="button" name="search"  onClick={find} ><i className="fa fa-search"></i></button>
       </form>
       
       {
-        data.map((curr) =>{
+        data.slice(0,4).map((curr) =>{
            let next = "NULL";
           if(curr.currencies)
           {
             next = Object.values(curr.currencies)[0].name;
           }
-          return <div key = {curr.id} className="box" >
-          <div className="sec">
-            <img src={curr.flags.png} object-fit="fill"width='100%' height='100%'></img>
-          </div>
-
-          <div className='thir'>
-            <h1 className='cn'> {curr.name.common}</h1>
-            <h2 className='cne'>currency:{next}</h2>
-            <h2 className='cned'>current Date and time : {dateTime(curr.timezones[0])} </h2>
-          </div>
-
-          <div className='six'>
-            <div className='four'>
-              <Link href={curr.maps.googleMaps}><a className="sh">Show Map</a></Link>
-            </div>
-            <div className='five'>
-            <Link  href={`/country/${curr.cca3}`}><a className="dd">Detail</a></Link>
-            </div>
-          </div>
+          
+          return <div key = {curr.id} className='box'  >
+               
+               <div className='sec' >
+                 <img src={curr.flags.png} object-fit='fill'width='100%' height='100%'></img>
+               </div>
+               <div className='thir'>
+                <h1 className='cn'> {curr.name.common}</h1>
+                <div className='cne'>Currency:{next}</div>
+                <div className='cned'>Current date and time : {dateTime(curr.timezones[0])} </div>
+                <div className='six'>
+                <div className='four'>
+                 <Link href={curr.maps.googleMaps}><a className='sh'>Show Map</a></Link>
+                 </div>
+                 <div className='five' key={curr.cca3}>
+                <Link  href={`/country/${curr.cca3}`}><a className='dd'>Detail</a></Link>
+            
+              </div>
+              </div>
+              </div>
+              
           
             
          
 
 
+           </div>
 
-
-          </div>
+        
         } )
       }
 
     </div>
+  
 
      
   )
