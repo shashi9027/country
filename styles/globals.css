@@ -171,6 +171,7 @@ form.example::after {
   width:40%;
 
   margin-top:20px;
+  margin-left: -px;
   
   
   
@@ -178,7 +179,7 @@ form.example::after {
 #third{
   
   
-  margin-left:5px;
+  
   margin-top:65px;
   
 }
@@ -190,8 +191,8 @@ form.example::after {
 }
 #image{
   margin-top: 10Px;
-  height:60%;
-  width:80%;
+  
+
 }
 #name{
   
@@ -205,12 +206,13 @@ form.example::after {
   margin-left: 3rem;
   font-size: 20px;
   border:1px solid rgb(110, 107, 107);
-  width:50%;
+  width:55%;
   font-weight: bold;
   height:100%;
   
 }
 .hene{
+  padding-top:15px;
   padding-left: 20px;
 }
 .hened{

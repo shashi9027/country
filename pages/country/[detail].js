@@ -59,7 +59,7 @@ const myData = ({data}) =>{
     <div id="first">
       <div id = "second" className="child">
         <h1 id="name">{data[0].name.common} </h1>
-        <img src={data[0].flags.png} id="image"></img>
+        <img src={data[0].flags.png} id="image" object-fit='fill'width='85%' height='80%'></img>
       </div>
       <div id = "third" className="child">
         <div id="native" className="fo">NativeName:{red}</div>

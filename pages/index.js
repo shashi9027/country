@@ -86,6 +86,7 @@ export default function Home({values}) {
  
   const [data, setvalue] = useState(values);
   const [tk, tki] = useState('');
+  console.log(tk);
   const find = async(Event) =>{
     Event.preventDefault();
     
@@ -94,6 +95,24 @@ export default function Home({values}) {
     let apide = await apid.json();
     console.log(apide);
     setvalue(apide);
+    
+
+  }
+  const getcon = async( ) =>{
+      var nodes = document.getElementsByClassName('box');
+      var len = tk.length;
+      console.log(nodes[0]);
+      for(var i=0; i<nodes.length; i++)
+      {
+        if(nodes[i].id.slice(0,len).toLowerCase() == tk.toLowerCase())
+        {
+          nodes[i].style.display = '';
+        }
+        else{
+          nodes[i].style.display = 'none';
+        }
+      }
+     
   }
 
   
@@ -123,19 +142,19 @@ export default function Home({values}) {
       
       <h1 id="head">Countries</h1>
       <form  className="example" >
-      <input   type="text" placeholder="Search countries" name="search" value ={tk}id="myInput" onChange={e => tki(e.target.value)} />
-      <button  type="button" name="search"  onClick={find} ><i className="fa fa-search"></i></button>
+      <input   type="text" placeholder="Search countries" name="search" value ={tk}id="myInput"  onChange={e => tki(e.target.value)} onKeyUp={getcon}  />
+      <button  type="button" name="search"  onClick={getcon} ><i className="fa fa-search"></i></button>
       </form>
       
       {
-        data.slice(0,4).map((curr) =>{
+        data.map((curr) =>{
            let next = "NULL";
           if(curr.currencies)
           {
             next = Object.values(curr.currencies)[0].name;
           }
           
-          return <div key = {curr.id} className='box'  >
+          return <div key = {curr.id} className='box' id={curr.name.common} >
                
                <div className='sec' >
                  <img src={curr.flags.png} object-fit='fill'width='100%' height='100%'></img>
