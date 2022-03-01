@@ -52,7 +52,7 @@ form.example::after {
 
 .box{
   border: 1px solid ;
-  width: 32% !important;
+  width: 32%;
   font-size: 18px;
   
   border: 1px solid #ddd;
@@ -65,7 +65,7 @@ form.example::after {
  
 .sec{
   border: 1px solid;
-  width: 38% !important;
+  width: 38% ;
   font-size: 18px;
   
   border: 1px solid #ddd;
@@ -191,6 +191,7 @@ form.example::after {
 #image{
   margin-top: 10Px;
   height:60%;
+  width:80%;
 }
 #name{
   
@@ -228,109 +229,127 @@ form.example::after {
   margin-left:20px;
   margin-top:10px;
 }
-@media only screen and (max-width:1285px)
+@media only screen and (max-width:1115px)
 {
   .box{
       width:32%;
   }
   form.example input{
-      width:27%;
+      width:23%;
   }
   form.example button{
-      width: 9%;
+      width: 5%;
   }
   
 
 }
-@media only screen and (max-width:1204px)
+@media only screen and (max-width:1038px)
 {
   
   .box{
       width:36%;
   }
   form.example input{
-      width:31%;
+      width:25%;
   }
   form.example button{
-      width: 13%;
+      width: 5%;
+  }
+  .sh{
+    padding-left: 5px;
   }
   
 
 }
-@media only screen and (max-width:1080px)
+@media only screen and (max-width:877px)
 {
   
   .box{
-      width:40%;
+      width:38%;
   }
   form.example input{
-      width: 35%;
+      width: 27%;
   }
   form.example button{
-      width: 17%;
+      width: 5%;
+  }
+  .four{
+    width:42%;
   }
   
 
 }
-@media only screen and (max-width: 974px)
+
+@media only screen and (max-width: 864px)
 {
   
   .box{
-      width:44%;
+      width:42%;
+      margin-left: 400px;
   }
   form.example input{
-      width:39%;
+      width:33%;
+    
   }
   form.example button{
-      width: 21%;
+      width: 7%;
   }
+  #head{
+    margin-left: 400px;
+  }
+  #myInput{
+    margin-left: 400px;
+    width :35%;
+  }
+  
   
 
 }
-@media only screen and (max-width:932px)
+@media only screen and (max-width:729px)
 {
   
   .box{
-     margin-left:400px
+     margin-left:300px
 
   }
   #myInput{
-      margin-left: 400px;
+      margin-left: 300px;
+  }
+  #head{
+    margin-left: 300px;
   }
 
 }
-@media only screen and (max-width: 901px)
+@media only screen and (max-width:674px)
 {
   
   .box{
-      width:48%;
+      margin-left: 200px;
+      width:46%
   }
-  form.example input{
-      width:43%;
+  #myInput{
+    margin-left:200px;
+    width:39%;
+    
   }
-  form.example button{
-      width: 25%;
+  #head{
+    margin-left:200px;
   }
+
   
 
 }
-@media only screen and (max-width: 818px)
+@media only screen and (max-width: 619px)
 {
   
   .box{
       width:52%;
       margin-left:200px;
   }
-  form.example input{
-      width:47%;
-      
-  }
-  form.example button{
-      width: 29%;
-      
-  }
+  
   #myInput{
       margin-left:200px;
+      width:45%;
   }
   #head{
       margin-left:200px;
@@ -340,315 +359,246 @@ form.example::after {
 }
 
 
-@media only screen and (max-width: 766px)
+@media only screen and (max-width: 549px)
 {
   
   .box{
       width:56%;
-      margin-left:200px;
+      margin-left:100px;
   }
-  form.example input{
-      width:51%;
-      
-  }
-  form.example button{
-      width: 33%;
-      
-  }
+ 
   #myInput{
-      margin-left:200px;
+      margin-left:100px;
+      width:49%;
   }
   #head{
-      margin-left:200px;
+      margin-left:100px;
   }
   
 
 }
 
-@media only screen and (max-width: 709px)
+@media only screen and (max-width: 467px)
 {
   
   .box{
       width:60%;
-      margin-left:200px;
+      margin-left:10px;
   }
-  form.example input{
-      width:55%;
-      
-  }
-  form.example button{
-      width: 37%;
-      
-  }
+  
   #myInput{
-      margin-left:200px;
+      margin-left:10px;
+      width:53%;
   }
   #head{
-      margin-left:200px;
+      margin-left:10px;
   }
   
 
 }
-@media only screen and (max-width: 668px)
+@media only screen and (max-width: 436px)
 {
   
   .box{
       width:64%;
-      margin-left:50px;
+      margin-left:10px;
   }
-  form.example input{
-      width:59%;
-      
-  }
+  
   form.example button{
-      width: 41%;
+      width: 9%;
       
   }
   #myInput{
-      margin-left:50px;
+      margin-left:10px;
+      width:55%;
   }
   #head{
-      margin-left:50px;
+      margin-left:10px;
   }
   
 
 }
 
-@media only screen and (max-width: 668px)
+@media only screen and (max-width: 415px)
 {
   
   .box{
-      width:68%;
-      margin-left:50px;
-  }
-  form.example input{
-      width:63%;
-      
-  }
-  form.example button{
-      width: 45%;
-      
-  }
-  #myInput{
-      margin-left:50px;
-  }
-  #head{
-      margin-left:50px;
-  }
-  
+    width:68%;
+    margin-left:10px;
+}
+
+form.example button{
+    width: 11%;
+    
+}
+#myInput{
+    margin-left:10px;
+    width:58%;
+}
+#head{
+    margin-left:10px;
+}
 
 }
 
 
-@media only screen and (max-width: 668px)
+@media only screen and (max-width: 373px)
 {
   
   .box{
-      width:72%;
-      margin-left:5px;
-  }
-  form.example input{
-      width:67%;
-      
-  }
-  form.example button{
-      width: 49%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
-  
+    width:74%;
+    margin-left:10px;
+}
+
+form.example button{
+    width: 13%;
+    
+}
+#myInput{
+    margin-left:10px;
+    width:61%;
+}
+#head{
+    margin-left:10px;
+}
 
 }
 
 
 
-@media only screen and (max-width: 550px)
+@media only screen and (max-width: 353px)
+{
+  
+  
+  .sh{
+    font-size: 12px;
+
+  }
+  .dd{
+    font-size: 12px;
+  }
+
+}
+
+
+@media only screen and (max-width: 280px)
 {
   
   .box{
-      width:76%;
-      margin-left:5px;
+      flex-direction: column;
+      height:180px;
   }
-  form.example input{
-      width:71%;
-      
-  }
-  form.example button{
-      width: 53%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
+  
   
 
 }
 
 
-@media only screen and (max-width: 532px)
+
+@media only screen and (max-width: 240px)
 {
   
   .box{
-      width:80%;
-      margin-left:5px;
+      height:320px;
   }
-  form.example input{
-      width:75%;
-      
+  .six{
+    flex-direction: column;
   }
-  form.example button{
-      width: 57%;
-      
+  .five{
+    margin-top: 10px;
+    margin-left: 9px;
   }
-  #myInput{
-      margin-left:5px;
+  .dd{
+    padding-left: 10px;
   }
-  #head{
-      margin-left:5px;
+
+  
+  
+
+}
+@media only screen and (max-width: 221px)
+{
+  
+  .four{
+    width:46%;
   }
+  .five{
+    width:46%;
+  }
+
+}
+
+@media only screen and (max-width: 216px)
+{
+  
+  .four{
+    width:55%;
+  }
+  .five{
+    width:55%;
+  }
+
+}
+@media only screen and (max-width: 186px)
+{
+  
+  .four{
+    width:62%;
+  }
+  .five{
+    width:62%;
+  }
+  
   
 
 }
 
 
-@media only screen and (max-width: 510px)
+@media only screen and (max-width: 171px)
 {
   
+  .four{
+    width:70%;
+  }
+  .five{
+    width:70%;
+  }
+
+}
+@media only screen and (max-width: 167px)
+{
+  
+  .four{
+    width:90%;
+  }
+  .five{
+    width:90%;
+  }
   .box{
-      width:84%;
-      margin-left:5px;
+     height:370px;
   }
-  form.example input{
-      width:79%;
-      
-  }
-  form.example button{
-      width: 61%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
-  
 
 }
-@media only screen and (max-width: 481px)
-{
-  
-  .box{
-      width:88%;
-      margin-left:5px;
-  }
-  form.example input{
-      width:83%;
-      
-  }
-  form.example button{
-      width: 65%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
-  
-
-}
-
-@media only screen and (max-width: 463px)
-{
-  
-  .box{
-      width:92%;
-      margin-left:5px;
-  }
-  form.example input{
-      width:87%;
-      
-  }
-  form.example button{
-      width: 69%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
-  
-
-}
-@media only screen and (max-width: 443px)
-{
-  
-  .box{
-      width:96%;
-      margin-left:5px;
-  }
-  form.example input{
-      width:91%;
-      
-  }
-  form.example button{
-      width: 73%;
-      
-  }
-  #myInput{
-      margin-left:5px;
-  }
-  #head{
-      margin-left:5px;
-  }
-  
-
-}
-
-
-@media only screen and (max-width: 1267px)
-{
-  
- #image{ width:70%;}
-
-}
-@media only screen and (max-width: 358px)
+@media only screen and (max-width: 1120px)
 {
   
  #first{
-  flex-direction: column;
- }
-
-}
-@media only screen and (max-width: 429px)
-{
-  
- .box{
      flex-direction: column;
-     height:280px;
+     
  }
 
 }
 
-@media only screen and (max-width: 249px)
+@media only screen and (max-width: 266px)
 {
   
- .box{
-     flex-direction: column;
-     height:280px;
- }
+  #image{
+    width:100%;
+
+  }
+  .hene{
+    padding-left: 5px;
+  }
 
 }
 
@@ -669,37 +619,28 @@ form.example::after {
 
 }
 
-@media only screen and (max-width: 181px)
+@media only screen and (max-width: 233px)
+{
+  #first{
+    margin-left: 5px;
+  }
+  .neighbour{
+    margin-left: 5px;
+  }
+  .hene{
+    font-size: 15px;
+  }
+ 
+
+
+}
+@media only screen and (max-width: 183px)
 {
   
- .box{
-     flex-direction: column;
-     height:350px;
- }
- .six{
-     flex-direction: column;
- }
+  .hene{
+    font-size: 10px;
+  }
+ 
 
- .sh{
-     font-size: 10px;
- }
- .dd{
-     font-size: 10px;
- }
- .sec{
-     width:100%;
- }
- .cn{
-     font-size: 10px;
- }
- .cne{
-  font-size: 10px;
-}
-.cned{
-  font-size: 10px;
-}
-#myInput{
-  width:100%
-}
 
 }
