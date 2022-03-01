@@ -91,10 +91,12 @@ export default function Home({values}) {
     Event.preventDefault();
     
     console.log(tk);
+    if(Event.key===13){
     const apid = await fetch("https://restcountries.com/v3.1/name/"+tk);
     let apide = await apid.json();
     console.log(apide);
     setvalue(apide);
+    }
     
 
   }
@@ -116,6 +118,10 @@ export default function Home({values}) {
   }
 
   
+   
+   
+
+
  
   
   
@@ -142,7 +148,7 @@ export default function Home({values}) {
       
       <h1 id="head">Countries</h1>
       <form  className="example" >
-      <input   type="text" placeholder="Search countries" name="search" value ={tk}id="myInput"  onChange={e => tki(e.target.value)} onKeyUp={getcon}  />
+      <input   type="text" placeholder="Search countries" name="search" value ={tk}id="myInput" onKeyPress={find}  onChange={e => tki(e.target.value)} onKeyUp={getcon}  />
       <button  type="button" name="search"  onClick={getcon} ><i className="fa fa-search"></i></button>
       </form>
       
